@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Laboratórios</title>
+    <link rel="stylesheet" href="estilo.css">
+    <!-- Aula 17 (integração): coloque aqui os <script> com defer,
+         na ordem certa: primeiro dados.js e regras.js, depois os .js das seções. -->
+</head>
+<body>
+    <nav>
+        <a href="index.html" aria-current="page">Agenda</a> |
+        <a href="cadastros.html">Cadastros</a> |
+        <a href="arquivos.html">Arquivos</a>
+    </nav>
+    <main>
+        <h1>Agenda de Laboratórios</h1>
+
+        <section>
+            <h2>Nova reserva</h2>
+            <form id="form-reserva">
+                <p><label for="res-professor">Professor(a)</label> <select id="res-professor"></select></p>
+                <p><label for="res-curso">Curso</label> <select id="res-curso"></select></p>
+                <p><label for="res-turma">Turma</label> <select id="res-turma"></select></p>
+                <p><label for="res-laboratorio">Laboratório</label> <select id="res-laboratorio"></select></p>
+                <p><label for="res-dia">Data</label> <select id="res-dia"></select></p>
+                <p><label for="res-turno">Turno</label> <select id="res-turno"></select></p>
+                <button type="submit">Confirmar reserva</button>
+            </form>
+            <p id="msg-reserva" role="status"></p>
+            <p><button type="button" id="btn-comprovante">Baixar comprovante da última reserva</button></p>
+        </section>
+
+        <section>
+            <h2>Próxima semana</h2>
+            <p id="semana"></p>
+            <p>No sábado, só o turno da manhã.</p>
+            <table>
+                <caption>Reservas por dia e turno (turma · laboratório · professor)</caption>
+                <thead>
+                    <tr id="dias-do-calendario"></tr>
+                </thead>
+                <tbody>
+                    <tr id="turno-1"></tr>
+                    <tr id="turno-2"></tr>
+                    <tr id="turno-3"></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Cancelar, desfazer e lista de espera</h2>
+            <p>
+                <label for="cancelar-reserva">Reserva</label>
+                <select id="cancelar-reserva"></select>
+                <button type="button" id="btn-cancelar">Cancelar reserva</button>
+            </p>
+            <p><button type="button" id="btn-desfazer">Desfazer última reserva</button></p>
+            <p id="msg-cancelar" role="status"></p>
+            <h3>Lista de espera</h3>
+            <pre id="espera"></pre>
+            <h3>Buscar reserva pelo número</h3>
+            <p>
+                <label for="busca-numero">Nº da reserva</label> <input id="busca-numero" inputmode="numeric">
+                <button type="button" id="btn-buscar">Buscar</button>
+            </p>
+            <pre id="resultado-busca"></pre>
+        </section>
+    </main>
+</body>
+</html>

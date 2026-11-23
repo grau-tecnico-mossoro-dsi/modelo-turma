@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M4 · Exportar e restaurar - Microprojetos</title>
+    <link rel="stylesheet" href="../estilo.css">
+    <!-- ordem: dados.js, regras.js (os dois feitos por você no M0) e o .js desta seção -->
+    <script src="../comum/dados.js" defer></script>
+    <script src="../comum/regras.js" defer></script>
+    <script src="exportar.js" defer></script>
+</head>
+<body>
+    <nav><a href="../index.html">← Microprojetos</a></nav>
+    <main>
+        <h1>M4 · Exportar e restaurar</h1>
+        <p class="tarefa">Aula 14 · Baixar reservas-semana-DD-MM.csv e voltar aos dados de exemplo. Você escreve o arquivo <code>exportar.js</code> nesta pasta.</p>
+
+        <section>
+            <h2>Exportar e recomeçar</h2>
+            <p>Exporta as reservas da semana em ordem de dia e turno.</p>
+            <p><button type="button" id="btn-exportar-reservas">Exportar reservas da semana</button></p>
+            <p>Apaga o que está salvo no navegador e volta aos dados de exemplo.</p>
+            <p><button type="button" id="btn-restaurar">Restaurar dados iniciais</button></p>
+            <p id="msg-exportar" role="status"></p>
+        </section>
+    </main>
+</body>
+</html>

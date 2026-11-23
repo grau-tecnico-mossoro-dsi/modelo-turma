@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M2 · Cursos - Microprojetos</title>
+    <link rel="stylesheet" href="../estilo.css">
+    <!-- ordem: dados.js, regras.js (os dois feitos por você no M0) e o .js desta seção -->
+    <script src="../comum/dados.js" defer></script>
+    <script src="../comum/regras.js" defer></script>
+    <script src="cursos.js" defer></script>
+</head>
+<body>
+    <nav><a href="../index.html">← Microprojetos</a></nav>
+    <main>
+        <h1>M2 · Cursos</h1>
+        <p class="tarefa">Aula 13 · Cadastrar, alterar, excluir e buscar cursos. Você escreve o arquivo <code>cursos.js</code> nesta pasta.</p>
+
+        <section>
+            <h2>Cursos</h2>
+            <form id="form-curso">
+                <p><label for="curso-sigla">Sigla (2 a 4 letras)</label> <input id="curso-sigla"></p>
+                <p><label for="curso-nome">Nome</label> <input id="curso-nome"></p>
+                <button type="submit">Cadastrar curso</button>
+            </form>
+            <p><label for="curso-escolhido">Curso</label> <select id="curso-escolhido"></select></p>
+            <p><label for="curso-nova-sigla">Nova sigla</label> <input id="curso-nova-sigla"></p>
+            <p><label for="curso-novo-nome">Novo nome</label> <input id="curso-novo-nome"></p>
+            <p>
+                <button type="button" id="btn-alterar-curso">Alterar</button>
+                <button type="button" id="btn-excluir-curso">Excluir</button>
+            </p>
+            <p>
+                <label for="curso-busca">Buscar (sigla ou parte do nome)</label> <input id="curso-busca">
+                <button type="button" id="btn-buscar-curso">Buscar</button>
+                <button type="button" id="btn-todos-cursos">Mostrar todos</button>
+            </p>
+            <p id="msg-cursos" role="status"></p>
+            <pre id="lista-cursos"></pre>
+        </section>
+    </main>
+</body>
+</html>

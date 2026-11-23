@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M9 · Cancelar e lista de espera - Microprojetos</title>
+    <link rel="stylesheet" href="../estilo.css">
+    <!-- ordem: dados.js, regras.js (os dois feitos por você no M0) e o .js desta seção -->
+    <script src="../comum/dados.js" defer></script>
+    <script src="../comum/regras.js" defer></script>
+    <script src="cancelar-e-espera.js" defer></script>
+</head>
+<body>
+    <nav><a href="../index.html">← Microprojetos</a></nav>
+    <main>
+        <h1>M9 · Cancelar e lista de espera</h1>
+        <p class="tarefa">Aula 16 · Cancelar, desfazer, mostrar a fila e buscar reserva pelo número. Você escreve o arquivo <code>cancelar-e-espera.js</code> nesta pasta.</p>
+
+        <section>
+            <h2>Cancelar, desfazer e lista de espera</h2>
+            <p>
+                <label for="cancelar-reserva">Reserva</label>
+                <select id="cancelar-reserva"></select>
+                <button type="button" id="btn-cancelar">Cancelar reserva</button>
+            </p>
+            <p><button type="button" id="btn-desfazer">Desfazer última reserva</button></p>
+            <p id="msg-cancelar" role="status"></p>
+            <h3>Lista de espera</h3>
+            <pre id="espera"></pre>
+            <h3>Buscar reserva pelo número</h3>
+            <p>
+                <label for="busca-numero">Nº da reserva</label> <input id="busca-numero" inputmode="numeric">
+                <button type="button" id="btn-buscar">Buscar</button>
+            </p>
+            <pre id="resultado-busca"></pre>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M5 · Turmas - Microprojetos</title>
+    <link rel="stylesheet" href="../estilo.css">
+    <!-- ordem: dados.js, regras.js (os dois feitos por você no M0) e o .js desta seção -->
+    <script src="../comum/dados.js" defer></script>
+    <script src="../comum/regras.js" defer></script>
+    <script src="turmas.js" defer></script>
+</head>
+<body>
+    <nav><a href="../index.html">← Microprojetos</a></nav>
+    <main>
+        <h1>M5 · Turmas</h1>
+        <p class="tarefa">Aula 15 · Cadastrar, alterar e excluir turmas (o curso vem de um select). Você escreve o arquivo <code>turmas.js</code> nesta pasta.</p>
+
+        <section>
+            <h2>Turmas</h2>
+            <form id="form-turma">
+                <p><label for="turma-curso">Curso</label> <select id="turma-curso"></select></p>
+                <p><label for="turma-nome">Nome (ex.: ADM09)</label> <input id="turma-nome"></p>
+                <p><label for="turma-alunos">Número de alunos (1 a 60)</label> <input id="turma-alunos" inputmode="numeric"></p>
+                <button type="submit">Cadastrar turma</button>
+            </form>
+            <p><label for="turma-escolhida">Turma</label> <select id="turma-escolhida"></select></p>
+            <p><label for="turma-novo-nome">Novo nome</label> <input id="turma-novo-nome"></p>
+            <p><label for="turma-novos-alunos">Novo número de alunos</label> <input id="turma-novos-alunos" inputmode="numeric"></p>
+            <p>
+                <button type="button" id="btn-alterar-turma">Alterar</button>
+                <button type="button" id="btn-excluir-turma">Excluir</button>
+            </p>
+            <p id="msg-turmas" role="status"></p>
+            <pre id="lista-turmas"></pre>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M3 · Importar .csv - Microprojetos</title>
+    <link rel="stylesheet" href="../estilo.css">
+    <!-- ordem: dados.js, regras.js (os dois feitos por você no M0) e o .js desta seção -->
+    <script src="../comum/dados.js" defer></script>
+    <script src="../comum/regras.js" defer></script>
+    <script src="importar.js" defer></script>
+</head>
+<body>
+    <nav><a href="../index.html">← Microprojetos</a></nav>
+    <main>
+        <h1>M3 · Importar .csv</h1>
+        <p class="tarefa">Aula 14 · Ler os .csv da pasta dados/ e avisar vínculos quebrados. Você escreve o arquivo <code>importar.js</code> nesta pasta.</p>
+
+        <section>
+            <h2>Importar dados (.csv)</h2>
+            <p>Aceita laboratorios.csv, cursos.csv, turmas.csv, professores.csv e reservas.csv (pasta dados/).</p>
+            <p>
+                <label for="arquivos">Selecione um ou mais arquivos</label>
+                <input type="file" id="arquivos" accept=".csv" multiple>
+            </p>
+            <p id="msg-importar" role="status"></p>
+            <pre id="avisos"></pre>
+        </section>
+    </main>
+</body>
+</html>

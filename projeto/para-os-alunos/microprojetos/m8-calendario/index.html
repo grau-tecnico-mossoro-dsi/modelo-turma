@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M8 · Calendário da semana - Microprojetos</title>
+    <link rel="stylesheet" href="../estilo.css">
+    <!-- ordem: dados.js, regras.js (os dois feitos por você no M0) e o .js desta seção -->
+    <script src="../comum/dados.js" defer></script>
+    <script src="../comum/regras.js" defer></script>
+    <script src="calendario.js" defer></script>
+</head>
+<body>
+    <nav><a href="../index.html">← Microprojetos</a></nav>
+    <main>
+        <h1>M8 · Calendário da semana</h1>
+        <p class="tarefa">Aula 16 · Transformar a matriz dia x turno numa tabela. Você escreve o arquivo <code>calendario.js</code> nesta pasta.</p>
+
+        <section>
+            <h2>Próxima semana</h2>
+            <p id="semana"></p>
+            <p>No sábado, só o turno da manhã.</p>
+            <table>
+                <caption>Reservas por dia e turno (turma · laboratório · professor)</caption>
+                <thead>
+                    <tr id="dias-do-calendario"></tr>
+                </thead>
+                <tbody>
+                    <tr id="turno-1"></tr>
+                    <tr id="turno-2"></tr>
+                    <tr id="turno-3"></tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>

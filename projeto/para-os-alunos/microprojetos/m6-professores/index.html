@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M6 · Professores - Microprojetos</title>
+    <link rel="stylesheet" href="../estilo.css">
+    <!-- ordem: dados.js, regras.js (os dois feitos por você no M0) e o .js desta seção -->
+    <script src="../comum/dados.js" defer></script>
+    <script src="../comum/regras.js" defer></script>
+    <script src="professores.js" defer></script>
+</head>
+<body>
+    <nav><a href="../index.html">← Microprojetos</a></nav>
+    <main>
+        <h1>M6 · Professores</h1>
+        <p class="tarefa">Aula 15 · Cadastrar, alterar, excluir, buscar e ordenar professores. Você escreve o arquivo <code>professores.js</code> nesta pasta.</p>
+
+        <section>
+            <h2>Professores</h2>
+            <form id="form-professor">
+                <p><label for="professor-nome">Nome completo</label> <input id="professor-nome"></p>
+                <button type="submit">Cadastrar professor</button>
+            </form>
+            <p><label for="professor-escolhido">Professor</label> <select id="professor-escolhido"></select></p>
+            <p><label for="professor-novo-nome">Novo nome completo</label> <input id="professor-novo-nome"></p>
+            <p>
+                <button type="button" id="btn-alterar-professor">Alterar</button>
+                <button type="button" id="btn-excluir-professor">Excluir</button>
+            </p>
+            <p>
+                <label for="professor-busca">Buscar por nome</label> <input id="professor-busca">
+                <button type="button" id="btn-buscar-professor">Buscar</button>
+            </p>
+            <p>
+                <button type="button" id="btn-professores-cadastro">Ordem de cadastro</button>
+                <button type="button" id="btn-professores-nome">Ordem alfabética</button>
+            </p>
+            <p id="msg-professores" role="status"></p>
+            <pre id="lista-professores"></pre>
+        </section>
+    </main>
+</body>
+</html>

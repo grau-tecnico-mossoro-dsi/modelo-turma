@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M7 · Nova reserva - Microprojetos</title>
+    <link rel="stylesheet" href="../estilo.css">
+    <!-- ordem: dados.js, regras.js (os dois feitos por você no M0) e o .js desta seção -->
+    <script src="../comum/dados.js" defer></script>
+    <script src="../comum/regras.js" defer></script>
+    <script src="nova-reserva.js" defer></script>
+</head>
+<body>
+    <nav><a href="../index.html">← Microprojetos</a></nav>
+    <main>
+        <h1>M7 · Nova reserva</h1>
+        <p class="tarefa">Aula 16 · Formulário igual ao do app: curso -> turma, regras, lista de espera e comprovante. Você escreve o arquivo <code>nova-reserva.js</code> nesta pasta.</p>
+
+        <section>
+            <h2>Nova reserva</h2>
+            <form id="form-reserva">
+                <p><label for="res-professor">Professor(a)</label> <select id="res-professor"></select></p>
+                <p><label for="res-curso">Curso</label> <select id="res-curso"></select></p>
+                <p><label for="res-turma">Turma</label> <select id="res-turma"></select></p>
+                <p><label for="res-laboratorio">Laboratório</label> <select id="res-laboratorio"></select></p>
+                <p><label for="res-dia">Data</label> <select id="res-dia"></select></p>
+                <p><label for="res-turno">Turno</label> <select id="res-turno"></select></p>
+                <button type="submit">Confirmar reserva</button>
+            </form>
+            <p id="msg-reserva" role="status"></p>
+            <p><button type="button" id="btn-comprovante">Baixar comprovante da última reserva</button></p>
+        </section>
+    </main>
+</body>
+</html>

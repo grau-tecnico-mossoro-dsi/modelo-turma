@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastros - Agenda de Laboratórios</title>
+    <link rel="stylesheet" href="estilo.css">
+    <!-- Aula 17 (integração): coloque aqui os <script> com defer,
+         na ordem certa: primeiro dados.js e regras.js, depois os .js das seções. -->
+</head>
+<body>
+    <nav>
+        <a href="index.html">Agenda</a> |
+        <a href="cadastros.html" aria-current="page">Cadastros</a> |
+        <a href="arquivos.html">Arquivos</a>
+    </nav>
+    <main>
+        <h1>Cadastros</h1>
+
+        <section>
+            <h2>Cursos</h2>
+            <form id="form-curso">
+                <p><label for="curso-sigla">Sigla (2 a 4 letras)</label> <input id="curso-sigla"></p>
+                <p><label for="curso-nome">Nome</label> <input id="curso-nome"></p>
+                <button type="submit">Cadastrar curso</button>
+            </form>
+            <p><label for="curso-escolhido">Curso</label> <select id="curso-escolhido"></select></p>
+            <p><label for="curso-nova-sigla">Nova sigla</label> <input id="curso-nova-sigla"></p>
+            <p><label for="curso-novo-nome">Novo nome</label> <input id="curso-novo-nome"></p>
+            <p>
+                <button type="button" id="btn-alterar-curso">Alterar</button>
+                <button type="button" id="btn-excluir-curso">Excluir</button>
+            </p>
+            <p>
+                <label for="curso-busca">Buscar (sigla ou parte do nome)</label> <input id="curso-busca">
+                <button type="button" id="btn-buscar-curso">Buscar</button>
+                <button type="button" id="btn-todos-cursos">Mostrar todos</button>
+            </p>
+            <p id="msg-cursos" role="status"></p>
+            <pre id="lista-cursos"></pre>
+        </section>
+
+        <section>
+            <h2>Turmas</h2>
+            <form id="form-turma">
+                <p><label for="turma-curso">Curso</label> <select id="turma-curso"></select></p>
+                <p><label for="turma-nome">Nome (ex.: ADM09)</label> <input id="turma-nome"></p>
+                <p><label for="turma-alunos">Número de alunos (1 a 60)</label> <input id="turma-alunos" inputmode="numeric"></p>
+                <button type="submit">Cadastrar turma</button>
+            </form>
+            <p><label for="turma-escolhida">Turma</label> <select id="turma-escolhida"></select></p>
+            <p><label for="turma-novo-nome">Novo nome</label> <input id="turma-novo-nome"></p>
+            <p><label for="turma-novos-alunos">Novo número de alunos</label> <input id="turma-novos-alunos" inputmode="numeric"></p>
+            <p>
+                <button type="button" id="btn-alterar-turma">Alterar</button>
+                <button type="button" id="btn-excluir-turma">Excluir</button>
+            </p>
+            <p id="msg-turmas" role="status"></p>
+            <pre id="lista-turmas"></pre>
+        </section>
+
+        <section>
+            <h2>Professores</h2>
+            <form id="form-professor">
+                <p><label for="professor-nome">Nome completo</label> <input id="professor-nome"></p>
+                <button type="submit">Cadastrar professor</button>
+            </form>
+            <p><label for="professor-escolhido">Professor</label> <select id="professor-escolhido"></select></p>
+            <p><label for="professor-novo-nome">Novo nome completo</label> <input id="professor-novo-nome"></p>
+            <p>
+                <button type="button" id="btn-alterar-professor">Alterar</button>
+                <button type="button" id="btn-excluir-professor">Excluir</button>
+            </p>
+            <p>
+                <label for="professor-busca">Buscar por nome</label> <input id="professor-busca">
+                <button type="button" id="btn-buscar-professor">Buscar</button>
+            </p>
+            <p>
+                <button type="button" id="btn-professores-cadastro">Ordem de cadastro</button>
+                <button type="button" id="btn-professores-nome">Ordem alfabética</button>
+            </p>
+            <p id="msg-professores" role="status"></p>
+            <pre id="lista-professores"></pre>
+        </section>
+
+        <section>
+            <h2>Laboratórios</h2>
+            <p>Laboratórios são espaços físicos: vêm dos dados iniciais ou do laboratorios.csv.</p>
+            <pre id="lista-laboratorios"></pre>
+        </section>
+    </main>
+</body>
+</html>

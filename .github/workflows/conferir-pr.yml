@@ -1,0 +1,30 @@
+name: Conferir PR
+
+on:
+  pull_request:
+    branches: [main]
+
+# Só leitura: o código do aluno roda sem segredos e sem permissão de escrita.
+# Não troque para pull_request_target.
+permissions:
+  contents: read
+
+jobs:
+  conferir:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Conferir a entrega
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          BRANCH: ${{ github.head_ref }}
+          AUTOR: ${{ github.event.pull_request.user.login }}
+        run: bash .github/scripts/conferir-pr.sh

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquivos - Agenda de Laboratórios</title>
+    <link rel="stylesheet" href="estilo.css">
+    <!-- Aula 17 (integração): coloque aqui os <script> com defer,
+         na ordem certa: primeiro dados.js e regras.js, depois os .js das seções. -->
+</head>
+<body>
+    <nav>
+        <a href="index.html">Agenda</a> |
+        <a href="cadastros.html">Cadastros</a> |
+        <a href="arquivos.html" aria-current="page">Arquivos</a>
+    </nav>
+    <main>
+        <h1>Arquivos</h1>
+
+        <section>
+            <h2>Importar dados (.csv)</h2>
+            <p>Aceita laboratorios.csv, cursos.csv, turmas.csv, professores.csv e reservas.csv (pasta dados/).</p>
+            <p>
+                <label for="arquivos">Selecione um ou mais arquivos</label>
+                <input type="file" id="arquivos" accept=".csv" multiple>
+            </p>
+            <p id="msg-importar" role="status"></p>
+            <pre id="avisos"></pre>
+        </section>
+
+        <section>
+            <h2>Exportar e recomeçar</h2>
+            <p>Exporta as reservas da semana em ordem de dia e turno.</p>
+            <p><button type="button" id="btn-exportar-reservas">Exportar reservas da semana</button></p>
+            <p>Apaga o que está salvo no navegador e volta aos dados de exemplo.</p>
+            <p><button type="button" id="btn-restaurar">Restaurar dados iniciais</button></p>
+            <p id="msg-exportar" role="status"></p>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M0 Comum - Microprojetos</title>
+    <link rel="stylesheet" href="../estilo.css">
+    <script src="dados.js" defer></script>
+    <script src="regras.js" defer></script>
+</head>
+<body>
+    <nav><a href="../index.html">← Microprojetos</a></nav>
+    <main>
+        <h1>M0 · Comum: dados.js e regras.js</h1>
+        <p class="tarefa">Aula 13 · Separe o script.js do CP5 em dois arquivos nesta pasta: <code>dados.js</code> (constantes, dados, Map/Set, localStorage) e <code>regras.js</code> (validações, vínculos, regras da reserva, fila, pilha, calendário, ordenação, busca). As funções com prompt e alert ficam para trás.</p>
+
+        <section>
+            <h2>Como testar</h2>
+            <p>Esta página não tem tela: abra o console (F12) e digite cada linha. Compare com o resultado esperado.</p>
+            <table>
+                <thead>
+                    <tr><th scope="col">Digite no console</th><th scope="col">Resultado esperado</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><code>laboratorios.length</code></td><td>5</td></tr>
+                    <tr><td><code>buscarLaboratorio(2).nome</code></td><td>"Informática"</td></tr>
+                    <tr><td><code>siglaJaExiste("adm", "")</code></td><td>true</td></tr>
+                    <tr><td><code>turnoPermitido(6, 2)</code></td><td>false</td></tr>
+                    <tr><td><code>horarioLivre(2, 3, 3)</code></td><td>false (DSI02 na quarta à noite)</td></tr>
+                    <tr><td><code>motivoDaRecusa(buscarPorId(turmas, 3), buscarLaboratorio(3), 2, 1)</code></td><td>"A turma não cabe: ADM11 tem 30 alunos e Radiologia tem 15 lugares."</td></tr>
+                    <tr><td><code>montarCalendario()[2][2].length</code></td><td>1</td></tr>
+                    <tr><td><code>ordenarPorDiaETurno(reservas)[0].id</code></td><td>2</td></tr>
+                    <tr><td><code>professores.push({ id: 5, nome: "Ana Souza" }); salvarDados()</code> e depois F5 e <code>professores.length</code></td><td>5 (o localStorage guardou)</td></tr>
+                    <tr><td><code>restaurarDadosIniciais(); professores.length</code></td><td>4</td></tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>

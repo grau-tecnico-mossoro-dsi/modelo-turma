@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de temperatura</title>
+    <script src="conversor.js" defer></script>
+</head>
+<body>
+    <h1>Conversor de temperatura</h1>
+    <form id="form-conversor">
+        <p>
+            <label for="valor">Temperatura</label>
+            <input id="valor">
+        </p>
+        <p>
+            <label for="direcao">Converter</label>
+            <select id="direcao">
+                <option value="CF">Celsius para Fahrenheit</option>
+                <option value="FC">Fahrenheit para Celsius</option>
+            </select>
+        </p>
+        <button type="submit">Converter</button>
+    </form>
+    <p id="resultado"></p>
+</body>
+</html>
