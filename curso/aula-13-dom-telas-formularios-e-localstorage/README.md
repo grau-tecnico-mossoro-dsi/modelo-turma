@@ -859,7 +859,7 @@ git push
 
 Regras:
 
-- acrescente um `<p id="resumo-cursos"></p>` no `m2-cursos/index.html`, logo antes do `<pre id="lista-cursos">`;
+- use o `<p id="resumo-cursos">` que já está no `m2-cursos/index.html`, logo antes da lista (ele fica vazio até você escrever esta parte);
 - escreva uma função `cursosSemTurma()` que **devolve** quantos cursos não têm turma (use a `cursoTemTurma` do `regras.js`);
 - a frase é atualizada dentro da `atualizarCursos()`, então ela muda sozinha depois de cadastrar ou excluir;
 - teste: cadastre um curso novo (vira "11 cursos cadastrados, 5 sem turma."), exclua e confira que volta.

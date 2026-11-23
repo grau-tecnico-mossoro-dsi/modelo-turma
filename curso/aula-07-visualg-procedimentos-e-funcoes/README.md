@@ -240,7 +240,7 @@ Por que não deixar tudo global? Porque, se `mostrarGrade` usasse a variável gl
 
 ## 7.7 Projeto da disciplina: o que fazemos hoje
 
-Hoje o `.alg` do CP2 é **reorganizado**: o comportamento não muda (o menu continua igual), mas o código fica dividido em partes. A versão de referência está em [`exemplos/reserva-aula07.alg`](exemplos/reserva-aula07.alg).
+Hoje o `.alg` do CP2 é **reorganizado**: o comportamento não muda (o menu continua igual), mas o código fica dividido em partes.
 
 **Passo 1. `procedimento linha`.** Troque todos os `escreval("-----...")` por `linha`.
 

@@ -280,7 +280,7 @@ Por que isso importa: é a primeira vez que um programa nosso lê **dados de um 
 
 ## 6.8 Projeto da disciplina: o que fazemos hoje
 
-Hoje o `alunos/<sua-pasta>/portugol/reserva-laboratorio.alg` ganha **memória**: os 5 laboratórios, várias turmas e uma semana inteira de reservas. É o **CP2**. A versão de referência está em [`exemplos/reserva-cp2.alg`](exemplos/reserva-cp2.alg).
+Hoje o `alunos/<sua-pasta>/portugol/reserva-laboratorio.alg` ganha **memória**: os 5 laboratórios, várias turmas e uma semana inteira de reservas. É o **CP2**.
 
 **Passo 1. Laboratórios em vetores paralelos.** No `var`, acrescente:
 
